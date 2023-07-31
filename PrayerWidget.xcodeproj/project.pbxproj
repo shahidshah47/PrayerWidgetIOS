@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6F0F689B2988ECBF0099C0BF /* PrayerWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F689A2988ECBF0099C0BF /* PrayerWidgetApp.swift */; };
+		6F0F689D2988ECBF0099C0BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F689C2988ECBF0099C0BF /* ContentView.swift */; };
+		6F0F689F2988ECC20099C0BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0F689E2988ECC20099C0BF /* Assets.xcassets */; };
+		6F0F68A22988ECC20099C0BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0F68A12988ECC20099C0BF /* Preview Assets.xcassets */; };
+		6F0F68AD2988FB7D0099C0BF /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F68AC2988FB7D0099C0BF /* WelcomeView.swift */; };
+		6F0F68B02989119A0099C0BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0F68AF2989119A0099C0BF /* FirebaseAuth */; };
+		6F0F68B22989119A0099C0BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0F68B12989119A0099C0BF /* FirebaseFirestore */; };
+		6F0F68B4298913830099C0BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F0F68B3298913830099C0BF /* GoogleService-Info.plist */; };
+		6F0F68D32989261D0099C0BF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F68B629891E800099C0BF /* Secrets.swift */; };
+		6F0F68F9298976ED0099C0BF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0F68BE298925DD0099C0BF /* WidgetKit.framework */; };
+		6F0F68FA298976ED0099C0BF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F0F68C0298925DD0099C0BF /* SwiftUI.framework */; };
+		6F0F68FD298976ED0099C0BF /* Prayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F68FC298976ED0099C0BF /* Prayer.swift */; };
+		6F0F6900298976F10099C0BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F0F68FF298976F10099C0BF /* Assets.xcassets */; };
+		6F0F6902298976F10099C0BF /* Prayer.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F68FE298976ED0099C0BF /* Prayer.intentdefinition */; };
+		6F0F6903298976F10099C0BF /* Prayer.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F68FE298976ED0099C0BF /* Prayer.intentdefinition */; };
+		6F0F6906298976F10099C0BF /* PrayerExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6F0F68F8298976ED0099C0BF /* PrayerExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6F0F690C298977210099C0BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0F690B298977210099C0BF /* FirebaseAuth */; };
+		6F0F690E298977280099C0BF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6F0F690D298977280099C0BF /* FirebaseFirestore */; };
+		6F0F690F2989797A0099C0BF /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F0F68B629891E800099C0BF /* Secrets.swift */; };
+		6F0F6952298A4B710099C0BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6F0F68B3298913830099C0BF /* GoogleService-Info.plist */; };
+		6F861440299C044100FAD58D /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6F86143F299C044100FAD58D /* FirebaseDatabase */; };
+		6F861442299C044100FAD58D /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6F861441299C044100FAD58D /* FirebaseDatabaseSwift */; };
+		6FC0AF32299BBC3A00872F40 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6FC0AF31299BBC3A00872F40 /* FirebaseDatabase */; };
+		6FC0AF34299BBC7B00872F40 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6FC0AF33299BBC7B00872F40 /* FirebaseDatabase */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6F0F6904298976F10099C0BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6F0F688F2988ECBF0099C0BF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F0F68F7298976ED0099C0BF;
+			remoteInfo = PrayerExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6F0F68D1298925E10099C0BF /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6F0F6906298976F10099C0BF /* PrayerExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6F0F68972988ECBF0099C0BF /* PrayerWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrayerWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0F689A2988ECBF0099C0BF /* PrayerWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerWidgetApp.swift; sourceTree = "<group>"; };
+		6F0F689C2988ECBF0099C0BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6F0F689E2988ECC20099C0BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F0F68A12988ECC20099C0BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6F0F68AC2988FB7D0099C0BF /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		6F0F68B3298913830099C0BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		6F0F68B5298914740099C0BF /* PrayerWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrayerWidget.entitlements; sourceTree = "<group>"; };
+		6F0F68B629891E800099C0BF /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		6F0F68BE298925DD0099C0BF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		6F0F68C0298925DD0099C0BF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		6F0F68F8298976ED0099C0BF /* PrayerExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrayerExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F0F68FC298976ED0099C0BF /* Prayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prayer.swift; sourceTree = "<group>"; };
+		6F0F68FE298976ED0099C0BF /* Prayer.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Prayer.intentdefinition; sourceTree = "<group>"; };
+		6F0F68FF298976F10099C0BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F0F6901298976F10099C0BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F0F690A298977010099C0BF /* PrayerExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PrayerExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6F0F68942988ECBF0099C0BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F861442299C044100FAD58D /* FirebaseDatabaseSwift in Frameworks */,
+				6FC0AF32299BBC3A00872F40 /* FirebaseDatabase in Frameworks */,
+				6F0F68B02989119A0099C0BF /* FirebaseAuth in Frameworks */,
+				6F861440299C044100FAD58D /* FirebaseDatabase in Frameworks */,
+				6F0F68B22989119A0099C0BF /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0F68F5298976ED0099C0BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FC0AF34299BBC7B00872F40 /* FirebaseDatabase in Frameworks */,
+				6F0F68FA298976ED0099C0BF /* SwiftUI.framework in Frameworks */,
+				6F0F690E298977280099C0BF /* FirebaseFirestore in Frameworks */,
+				6F0F690C298977210099C0BF /* FirebaseAuth in Frameworks */,
+				6F0F68F9298976ED0099C0BF /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6F0F688E2988ECBF0099C0BF = {
+			isa = PBXGroup;
+			children = (
+				6F0F690A298977010099C0BF /* PrayerExtension.entitlements */,
+				6F0F68992988ECBF0099C0BF /* PrayerWidget */,
+				6F0F68FB298976ED0099C0BF /* Prayer */,
+				6F0F68BD298925DD0099C0BF /* Frameworks */,
+				6F0F68982988ECBF0099C0BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6F0F68982988ECBF0099C0BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6F0F68972988ECBF0099C0BF /* PrayerWidget.app */,
+				6F0F68F8298976ED0099C0BF /* PrayerExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6F0F68992988ECBF0099C0BF /* PrayerWidget */ = {
+			isa = PBXGroup;
+			children = (
+				6F0F68B5298914740099C0BF /* PrayerWidget.entitlements */,
+				6F0F68B3298913830099C0BF /* GoogleService-Info.plist */,
+				6F0F689A2988ECBF0099C0BF /* PrayerWidgetApp.swift */,
+				6F0F68AC2988FB7D0099C0BF /* WelcomeView.swift */,
+				6F0F689C2988ECBF0099C0BF /* ContentView.swift */,
+				6F0F68B629891E800099C0BF /* Secrets.swift */,
+				6F0F689E2988ECC20099C0BF /* Assets.xcassets */,
+				6F0F68A02988ECC20099C0BF /* Preview Content */,
+			);
+			path = PrayerWidget;
+			sourceTree = "<group>";
+		};
+		6F0F68A02988ECC20099C0BF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6F0F68A12988ECC20099C0BF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6F0F68BD298925DD0099C0BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6F0F68BE298925DD0099C0BF /* WidgetKit.framework */,
+				6F0F68C0298925DD0099C0BF /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F0F68FB298976ED0099C0BF /* Prayer */ = {
+			isa = PBXGroup;
+			children = (
+				6F0F68FC298976ED0099C0BF /* Prayer.swift */,
+				6F0F68FE298976ED0099C0BF /* Prayer.intentdefinition */,
+				6F0F68FF298976F10099C0BF /* Assets.xcassets */,
+				6F0F6901298976F10099C0BF /* Info.plist */,
+			);
+			path = Prayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6F0F68962988ECBF0099C0BF /* PrayerWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0F68A52988ECC20099C0BF /* Build configuration list for PBXNativeTarget "PrayerWidget" */;
+			buildPhases = (
+				6F0F68932988ECBF0099C0BF /* Sources */,
+				6F0F68942988ECBF0099C0BF /* Frameworks */,
+				6F0F68952988ECBF0099C0BF /* Resources */,
+				6F0F68D1298925E10099C0BF /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6F0F6905298976F10099C0BF /* PBXTargetDependency */,
+			);
+			name = PrayerWidget;
+			packageProductDependencies = (
+				6F0F68AF2989119A0099C0BF /* FirebaseAuth */,
+				6F0F68B12989119A0099C0BF /* FirebaseFirestore */,
+				6FC0AF31299BBC3A00872F40 /* FirebaseDatabase */,
+				6F86143F299C044100FAD58D /* FirebaseDatabase */,
+				6F861441299C044100FAD58D /* FirebaseDatabaseSwift */,
+			);
+			productName = PrayerWidget;
+			productReference = 6F0F68972988ECBF0099C0BF /* PrayerWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6F0F68F7298976ED0099C0BF /* PrayerExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6F0F6907298976F10099C0BF /* Build configuration list for PBXNativeTarget "PrayerExtension" */;
+			buildPhases = (
+				6F0F68F4298976ED0099C0BF /* Sources */,
+				6F0F68F5298976ED0099C0BF /* Frameworks */,
+				6F0F68F6298976ED0099C0BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrayerExtension;
+			packageProductDependencies = (
+				6F0F690B298977210099C0BF /* FirebaseAuth */,
+				6F0F690D298977280099C0BF /* FirebaseFirestore */,
+				6FC0AF33299BBC7B00872F40 /* FirebaseDatabase */,
+			);
+			productName = PrayerExtension;
+			productReference = 6F0F68F8298976ED0099C0BF /* PrayerExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6F0F688F2988ECBF0099C0BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					6F0F68962988ECBF0099C0BF = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					6F0F68F7298976ED0099C0BF = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6F0F68922988ECBF0099C0BF /* Build configuration list for PBXProject "PrayerWidget" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6F0F688E2988ECBF0099C0BF;
+			packageReferences = (
+				6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				6F86143E299C044100FAD58D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6F0F68982988ECBF0099C0BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6F0F68962988ECBF0099C0BF /* PrayerWidget */,
+				6F0F68F7298976ED0099C0BF /* PrayerExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6F0F68952988ECBF0099C0BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0F68A22988ECC20099C0BF /* Preview Assets.xcassets in Resources */,
+				6F0F689F2988ECC20099C0BF /* Assets.xcassets in Resources */,
+				6F0F68B4298913830099C0BF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0F68F6298976ED0099C0BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0F6900298976F10099C0BF /* Assets.xcassets in Resources */,
+				6F0F6952298A4B710099C0BF /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6F0F68932988ECBF0099C0BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0F689D2988ECBF0099C0BF /* ContentView.swift in Sources */,
+				6F0F68D32989261D0099C0BF /* Secrets.swift in Sources */,
+				6F0F6903298976F10099C0BF /* Prayer.intentdefinition in Sources */,
+				6F0F68AD2988FB7D0099C0BF /* WelcomeView.swift in Sources */,
+				6F0F689B2988ECBF0099C0BF /* PrayerWidgetApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6F0F68F4298976ED0099C0BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0F68FD298976ED0099C0BF /* Prayer.swift in Sources */,
+				6F0F690F2989797A0099C0BF /* Secrets.swift in Sources */,
+				6F0F6902298976F10099C0BF /* Prayer.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6F0F6905298976F10099C0BF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6F0F68F7298976ED0099C0BF /* PrayerExtension */;
+			targetProxy = 6F0F6904298976F10099C0BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6F0F68A32988ECC20099C0BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6F0F68A42988ECC20099C0BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6F0F68A62988ECC20099C0BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrayerWidget/PrayerWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrayerWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8BFP74KYX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.takvim.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F0F68A72988ECC20099C0BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PrayerWidget/PrayerWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PrayerWidget/Preview Content\"";
+				DEVELOPMENT_TEAM = Z8BFP74KYX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.takvim.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F0F6908298976F10099C0BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PrayerExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8BFP74KYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prayer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prayer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.takvim.app.Prayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6F0F6909298976F10099C0BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = PrayerExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Z8BFP74KYX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Prayer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Prayer;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ch.takvim.app.Prayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6F0F68922988ECBF0099C0BF /* Build configuration list for PBXProject "PrayerWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0F68A32988ECC20099C0BF /* Debug */,
+				6F0F68A42988ECC20099C0BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0F68A52988ECC20099C0BF /* Build configuration list for PBXNativeTarget "PrayerWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0F68A62988ECC20099C0BF /* Debug */,
+				6F0F68A72988ECC20099C0BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6F0F6907298976F10099C0BF /* Build configuration list for PBXNativeTarget "PrayerExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F0F6908298976F10099C0BF /* Debug */,
+				6F0F6909298976F10099C0BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		6F86143E299C044100FAD58D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6F0F68AF2989119A0099C0BF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6F0F68B12989119A0099C0BF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6F0F690B298977210099C0BF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6F0F690D298977280099C0BF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6F86143F299C044100FAD58D /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F86143E299C044100FAD58D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6F861441299C044100FAD58D /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F86143E299C044100FAD58D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		6FC0AF31299BBC3A00872F40 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6FC0AF33299BBC7B00872F40 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6F0F68AE298911990099C0BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6F0F688F2988ECBF0099C0BF /* Project object */;
+}
